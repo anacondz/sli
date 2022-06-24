@@ -47,9 +47,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.sw-de>.swipper-describe {
+    padding-bottom: 9px;
+}
 .swipper-describe {
-  
+  border-bottom: 1px solid #E1E1E1;
         font-family: 'DM Sans';
             font-style: normal;
             font-weight: 500;
@@ -59,13 +61,24 @@ body {
             color: #000000;
 }
 .swipper-p {
-    width: 157px;
-
+   margin: 0;
+ 
     padding: 30px;
 }
 
-.swipper-image-cont{
-    height: 448px;
+.sw-de {
+   position: relative;
+}
+.swipper-describe::before {
+   content: '';
+   position: absolute;
+   display: block;
+   width: 54px;
+   height: 40px;
+   background: url(./image/block.png);
+    top: -9px;
+        left: -26px;
+            opacity: 0.5;
 }
 
 .swipper-image {
@@ -75,6 +88,7 @@ body {
 }
 .swipper-back {
 background-color: #FAFAFA;
+margin: 0 20px;
    
 }
 .quotes {
