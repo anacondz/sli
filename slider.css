@@ -1,7 +1,7 @@
 html,
 body {
     position: relative;
-    height: 100%;
+    height: 634px;
 }
 h1,
 h2,
@@ -34,7 +34,7 @@ body {
 
 .swiper {
     width: 280px;
-    height: 100%;
+    height: 634px;
 }
 
 .swiper-slide {
@@ -47,11 +47,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-.sw-de>.swipper-describe {
-    padding-bottom: 9px;
-}
+
 .swipper-describe {
-  border-bottom: 1px solid #E1E1E1;
+ 
         font-family: 'DM Sans';
             font-style: normal;
             font-weight: 500;
@@ -59,16 +57,15 @@ body {
             line-height: 31px;        
             text-align: center;
             color: #000000;
+            background-image: repeating-linear-gradient(180deg, transparent, transparent 30px, #E1E1E1 31px);
 }
 .swipper-p {
    margin: 0;
- 
+ position: relative;
     padding: 30px;
 }
 
-.sw-de {
-   position: relative;
-}
+
 .swipper-describe::before {
    content: '';
    position: absolute;
@@ -76,9 +73,9 @@ body {
    width: 54px;
    height: 40px;
    background: url(./image/block.png);
-    top: -9px;
-        left: -26px;
-            opacity: 0.5;
+    top: 20px;
+        right: 180px;
+            opacity: 0.45;
 }
 
 .swipper-image {
